@@ -1,3 +1,32 @@
+> [!IMPORTANT]
+> ### 📢 项目正式独立与迁移公告（老用户升级必读）
+>
+> **本项目现已正式完成架构独立与全面升级，脱离原 Fork 关系，迁移至全新的独立旗舰项目仓库：**
+> 👉 **全新独立仓库**：**[https://github.com/lecheng2018/dsh-qq-hub](https://github.com/lecheng2018/dsh-qq-hub)**
+>
+> ---
+>
+> #### 为什么要独立迁移？
+> 本项目最初作为“大肥鱼”的增强分支，但在持续迭代中，我们为其注入了**完整的 DSH Agent 远程派活闭环、交互式多选提问（ask_user_question）、通用工具审批流（approval/request）、断线消息自动补收（backfill）、全功能定时调度器（/remind）、TOTP 动态口令权限锁**，以及支持 10 大平台的**多平台内容解析引擎（multi-parser）**。
+>
+> 现在的项目规模与功能边界已经质变为一个**全能型 DSH QQ 旗舰交互终端与智能伙伴中心**，为获得完整的 GitHub 搜索支持、独立 Release 交付与更长远的架构演进，项目正式定名并独立为 **DSH-QQ-Hub**。
+>
+> #### 老用户如何平滑迁移？
+> 运行一行安装命令直接切换，**所有历史配置、Cookie、长期记忆库已内置向下兼容逻辑，升级 100% 自动继承，绝不丢失任何数据！**
+> 
+> ```powershell
+> # Windows 桌面版 (PowerShell)
+> & "$env:LOCALAPPDATA\Programs\DeepSeek Harness\resources\runtime\cli\bin\dsh.cmd" plugin --profile desktop add github:lecheng2018/dsh-qq-hub
+> ```
+> ```bash
+> # Linux / macOS / Docker (Bash)
+> dsh plugin --profile <你的profile名称> add github:lecheng2018/dsh-qq-hub
+> ```
+>
+> *本仓库已完成历史归档，后续所有功能迭代、Bug 修复及版本发布均在新仓库维护，请各位老用户前往新仓库关注并点亮 Star 🌟！*
+
+---
+
 # Aurabot · 住在 QQ 里的智能伙伴与 DSH Agent 交互终端
 
 [![GitHub Release](https://img.shields.io/github/v/release/lecheng2018/dsh-aurabot-qq?color=blue&logo=github)](https://github.com/lecheng2018/dsh-aurabot-qq/releases)
